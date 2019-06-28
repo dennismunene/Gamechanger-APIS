@@ -6,12 +6,13 @@ $app = new \Slim\App;
 
 //slim application routes
 
-$app->get('/api/sales', 'getSales');
+$app->get('/api/get_products', 'get_products');
+
 
 $app->get('/api/login', 'login');
-
 $app->get('/api/post_sale', 'postTotalSale');
 $app->get('/api/post_stock', 'postStock');
+$app->get('/api/post_schweppes_stock', 'post_schweppes_stock');
 $app->post('/api/post_pic', 'postAgentPic');
 
 
@@ -33,10 +34,32 @@ function DB_Connection() {
     return $dbh;
 }
 
+
+function get_products(){
+
+    //Creating sql query
+    $sql = "SELECT * from tbl_products";
+
+
+    try {
+        $db = DB_Connection();
+
+        if ($res = $db->query($sql)) {
+
+            echo json_encode($res);
+
+        } else {
+            return '{"success":0}';
+        }
+
+    } catch (PDOException $e) {
+        return '{"success":0}';
+    }
+}
+
 function postStock($request){
     $sql = "insert into tbl_app_stock (`agent_id`,`type`,`rubia`,`rubia5l`,`quatz`,`hiperf`,`region`,`van_number`,`date_created`) values(:agent_id,:type,:rubia,:rubia5l,:quatz,:hiperf,:region,:van_number,:date_created)";
-    
-         
+
      try{
 
         $db = DB_Connection();
@@ -44,7 +67,7 @@ function postStock($request){
         $stmt->bindParam("agent_id", $request->getParam('agent_id'));
         $stmt->bindParam("type", $request->getParam('type'));
         $stmt->bindParam("rubia", $request->getParam('rubia'));
-         $stmt->bindParam("rubia5l", $request->getParam('rubia5l'));
+        $stmt->bindParam("rubia5l", $request->getParam('rubia5l'));
         $stmt->bindParam("quatz", $request->getParam('quatz'));
         $stmt->bindParam("hiperf", $request->getParam('hiperf'));
         $stmt->bindParam("region", $request->getParam('region'));
@@ -56,7 +79,28 @@ function postStock($request){
         echo '{"success":"true"}';
     } catch (PDOException $e) {
         echo '{"success":"false","error":"'. $e->getMessage().'"}';
+    }
+}
+function post_schweppes_stock($request){
+    $sql = "insert into tbl_schweppes_stock (`agent_id`,`type`,`schweppes300ml`,`schweppes500ml`,`region`,`van_number`,`date_created`) values(:agent_id,:type,:schweppes300ml,:schweppes500ml,:region,:van_number,:date_created)";
 
+     try{
+
+        $db = DB_Connection();
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam("agent_id", $request->getParam('agent_id'));
+        $stmt->bindParam("type", $request->getParam('type'));
+        $stmt->bindParam("schweppes300ml", $request->getParam('schweppes300ml'));
+        $stmt->bindParam("schweppes500ml", $request->getParam('schweppes500ml'));
+        $stmt->bindParam("region", $request->getParam('region'));
+        $stmt->bindParam("van_number", $request->getParam('van_number'));
+        $stmt->bindParam("date_created", date('Y-m-d H:i:s'));
+
+        $stmt->execute();
+
+        echo '{"success":"true"}';
+    } catch (PDOException $e) {
+        echo '{"success":"false","error":"'. $e->getMessage().'"}';
     }
 }
 
@@ -156,58 +200,6 @@ function postTotalSale($request){
     
 }
 
-
-function postGoTvSale($request){
-    $sql = "insert into tbl_gotv_sales (`full_name`,`phone`,`estate`,`houseno`,`hasGoTv`,`followUpQuestion`,`followUpAnswer`,`paymentOption`,`agent_id`,`lat`,`lng`,`reference`,`date_created`) values (:full_name,:phone,:estate,:houseno,:hasGoTv,:followUpQuestion,:followUpAnswer,:paymentOption,:agent_id,:lat,:lng,:reference,:date_created)";
-
-    try{
-
-        $db = DB_Connection();
-        $stmt = $db->prepare($sql);
-        $stmt->bindParam("full_name", $request->getParam('full_name'));
-        $stmt->bindParam("phone", $request->getParam('phone'));
-        $stmt->bindParam("estate", $request->getParam('estate'));
-        $stmt->bindParam("houseno", $request->getParam('houseno'));
-        $stmt->bindParam("hasGoTv", $request->getParam('hasGoTv'));
-        $stmt->bindParam("followUpQuestion", $request->getParam('followUpQuestion'));
-        $stmt->bindParam("followUpAnswer", $request->getParam('followUpAnswer'));
-        $stmt->bindParam("paymentOption", $request->getParam('paymentOption'));
-        $stmt->bindParam("agent_id", $request->getParam('agent_id'));
-        $stmt->bindParam("lat", $request->getParam('lat'));
-        $stmt->bindParam("lng", $request->getParam('lng'));
-        $stmt->bindParam("reference", $request->getParam('reference'));
-        $stmt->bindParam("date_created", date('Y-m-d H:i:s'));
-
-        $stmt->execute();
-
-        echo '{"success":"true"}';
-    } catch (PDOException $e) {
-        echo '{"success":"false","error":"'. $e->getMessage().'"}';
-
-    }
-}
-
-
-
-function getSales($request){
-    $agent_id=$request->getParam('agent_id');
-
-    $sql = "select * from tbl_gotv_sales where agent_id=".$agent_id;
-
-    try {
-        $db = DB_Connection();
-        $stmt = $db->query($sql);
-        $list = $stmt->fetchAll(PDO::FETCH_OBJ);
-        $db = null;
-        echo json_encode(array('sales'=>$list));
-    } catch (PDOException $e) {
-        echo '{"success":"false","error":"' . $e->getMessage() . '""}';
-    }
-}
-
-
-
-// GET One Bus Details
 function login($request, $response, $args) {
     
     //Getting values 
@@ -240,145 +232,8 @@ function login($request, $response, $args) {
         return '{"success":0}';
     }
 }
+
+
+
     
-function postCallReport($request, $response, $args) {
-	    
-    $books = json_decode($request->getBody());
-    
-    try{
-	$sql = "INSERT INTO tbl_app_agentlocation 
-	(`agent`,`date`,`time_in`, `client_name`, `purpose_of_visit`, `time_out`, `contact_person`, `phone_number`,`comment`,`longitude`,`latitude`, `address`) 
-	VALUES 
-	(:agent,:date, :time_in, :client_name, :purpose_of_visit, :time_out, :contact_person, :phone_number, :comment, :longitude, :latitude, :address)";
-	
-	$db = DB_Connection();
-	foreach ($books as $book){
-		$address = "";
-		if($book->latitude == "0.0" || $book->longitude == "0.0"){ //Need to get the exact matching strings for the lat && long as sent by phone when it can't acquire coordinates
-			$address = "No location posted by phone";
-		}else{
-			
-			//call google APIs here to get the address
-			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" .$book->latitude. ","  .$book->longitude. "&key=AIzaSyCtsUzCViKyJJYRgInZ17WHe2rbdqtVvk0";
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, $url);
-			// Set so curl_exec returns the result instead of outputting it.
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			// accept any CA
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
-			$json_data = curl_exec($ch); 
-
-			$json_data = json_decode($json_data, true);
-
-            if(sizeof($json_data['results'])>=2)
-                $address = $json_data['results'][2]['formatted_address'];
-            else
-			$address = $json_data['results'][1]['formatted_address'];
-			
-			curl_close($ch);
-		}
-
-
-		//date_default_timezone_set("Africa/Nairobi");
-		//$date = date("Y-m-d h:i:sa"); //2016-06-08 09:45:11am
-		//$file = fopen("callreport_log_file.txt", "a+");
-		//fwrite($file, '[LOG TIME: ' .$date. '] [ADDRESS: ' .$address. '] [AGENT: ' .$book->user. '] [TIME IN: ' .$book->time_in. "\r");
-		//fclose($file);
-
-
-/* $params = "Date: " .$book->date. " TIME IN: " .$book->time_in. " CLIENT: " .$book->client. " PURPOSE: " .$book->purpose. " TIME OUT: " .$book->time_out. " CONTACT: " .$book->contact. " PHONE: " .$book->number. " COMMENT: " .$book->comment. " LONG: " .$book->longitude. " LAT: " .$book->latitude. "\r"; */
-
-
-		$stmt = $db->prepare($sql);
-		$stmt->bindParam("agent", $book->user);
-		$stmt->bindParam("date", $book->date);
-		$stmt->bindParam("time_in", $book->time_in);
-		$stmt->bindParam("client_name", $book->client);
-		$stmt->bindParam("purpose_of_visit", $book->purpose);
-		$stmt->bindParam("time_out", $book->time_out);
-		$stmt->bindParam("contact_person", $book->contact);
-		$stmt->bindParam("phone_number", $book->number);
-		$stmt->bindParam("comment", $book->comment);
-		$stmt->bindParam("longitude", $book->longitude);
-		$stmt->bindParam("latitude", $book->latitude);
-		$stmt->bindParam("address", $address);
-		$stmt->execute();	
-
-	}
-	    
-	echo '{"success":1}';
-
-    } catch (PDOException $e) {
-        echo '{"success":}'.$e->getMessage();
-        
-    }
-
-}
-
-function postDailyMarketReport($request){
-    $sql = "Insert into tbl_daily_market_reports (`customer_name`,`address`,`contact_person`,`contact_number`,`type_agrovet`,`type_broiler`,`type_dealer`,`type_layers`,`avg_broilers`,`avg_layers`,`feeds_source`,`chicks_source`,`remarks`,`sales_person`,`date_created`) Values (:customer_name,:address,:contact_person,:contact_number,:type_agrovet,:type_broiler,:type_dealer,:type_layers,:avg_broilers,:avg_layers,:feeds_source,:chicks_source,:remarks,:sales_person,:date_created)";
-
-
-    try{
-
-    	$db = DB_Connection();
-    	$stmt = $db->prepare($sql);
-    	$stmt->bindParam("customer_name", $request->getParam('customer_name'));
-    		$stmt->bindParam("address", $request->getParam('address'));
-    	$stmt->bindParam("contact_number", $request->getParam('contact_number'));
-    	$stmt->bindParam("type_agrovet", $request->getParam('type_agrovet'));
-    	$stmt->bindParam("type_broiler", $request->getParam('type_broiler'));
-    	$stmt->bindParam("type_dealer", $request->getParam('type_dealer'));
-    	$stmt->bindParam("type_layers", $request->getParam('type_layers'));
-    $stmt->bindParam("contact_person", $request->getParam('contact_person'));
-    	$stmt->bindParam("avg_layers", $request->getParam('avg_layers'));
-    	$stmt->bindParam("avg_broilers", $request->getParam('avg_broilers'));
-    	$stmt->bindParam("feeds_source", $request->getParam('feed_source'));
-    	$stmt->bindParam("chicks_source", $request->getParam('chicks_source'));
-    	$stmt->bindParam("remarks", $request->getParam('remarks'));
-    	$stmt->bindParam("sales_person", $request->getParam('sales_person'));
-    	$stmt->bindParam("date_created", date('Y-m-d H:i:s'));
-
-		$stmt->execute();
-
-	echo '{"success":"true"}';
-    } catch (PDOException $e) {
-        echo '{"success":"false"}';
-        //.$e->getMessage();
-
-    }
-
-}
-
-function postPerformanceFeedReport($request){
-    $sql = "insert into tbl_feed_performace_report (`famer_names`,`address`,`region`,`dealer_name`,`total_doc`,`feed_company`,`doc_company`,`mortality`,`age`,`wtGain`,`feedCon`,`weightedStd`,`feedConStd`,`sales_person`,`date_created`) values (:farmer_names,:address,:region,:dealer_name,:total_doc,:feed_company,:doc_company,:mortality,:age,:wtGain,:feedCon,:weightedStd,:feedConStd,:sales_person,:date_created)";
-
-      try{
-
-    	$db = DB_Connection();
-    	$stmt = $db->prepare($sql);
-    	$stmt->bindParam("farmer_names", $request->getParam('farmer_names'));
-    		$stmt->bindParam("address", $request->getParam('address'));
-    	$stmt->bindParam("region", $request->getParam('region'));
-    	$stmt->bindParam("dealer_name", $request->getParam('dealer_name'));
-    	$stmt->bindParam("total_doc", $request->getParam('total_doc'));
-    	$stmt->bindParam("feed_company", $request->getParam('feed_company'));
-    	$stmt->bindParam("doc_company", $request->getParam('doc_company'));
-    	$stmt->bindParam("mortality", $request->getParam('mortality'));
-    	$stmt->bindParam("age", $request->getParam('age'));
-		$stmt->bindParam("wtGain", $request->getParam('wtGain'));
-    	$stmt->bindParam("feedCon", $request->getParam('feedCon'));
-    	$stmt->bindParam("weightedStd", $request->getParam('weightedStd'));
-    	$stmt->bindParam("feedConStd", $request->getParam('feedConStd'));
-    	$stmt->bindParam("sales_person", $request->getParam('sales_person'));
-    	$stmt->bindParam("date_created", date('Y-m-d H:i:s'));
-
-		$stmt->execute();
-
-	echo '{"success":"true"}';
-    } catch (PDOException $e) {
-        echo '{"success":"false"}';
-
-    }
-}
