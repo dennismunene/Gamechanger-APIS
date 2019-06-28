@@ -150,8 +150,8 @@ function postAgentPic($request){
     }
 }
 function post_schweppes_sale($request){
-    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`would_recommend`,`purchase_influence`,`order_id`,`sales_photo`)
-values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:would_recommend,:purchase_influence,:order_id,:sales_photo)";
+    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`would_recommend`,`purchase_influence`,`sales_photo`)
+values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:would_recommend,:purchase_influence,:sales_photo)";
 
     $img_path = "";
 
@@ -180,7 +180,6 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
         $stmt->bindParam("purchase_influence",  $request->getParam('purchase_influence'));
         $stmt->bindParam("sales_photo", $img_path);
 
-        $stmt->bindParam("date_created", date('Y-m-d H:i:s'));
         $stmt->execute();
 
         $sale_id = $db->lastInsertId();
