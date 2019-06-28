@@ -46,7 +46,7 @@ function get_products(){
 
         if ($res = $db->query($sql)) {
 
-            echo json_encode($res->fetch(PDO::FETCH_OBJ));
+            echo json_encode($res->fetch(PDO::FETCH_ASSOC));
 
         } else {
             return '{"success":0}';
