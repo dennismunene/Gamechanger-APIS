@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="686c482c-eca5-4fce-b065-33b2ae518c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
@@ -19,26 +18,26 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="210" column="256" lean-forward="false" selection-start-line="210" selection-start-column="256" selection-end-line="210" selection-end-column="256" />
+            <state relative-caret-position="155">
+              <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
               <folding>
                 <element signature="n#get_products#0;n#!!top" expanded="false" />
                 <element signature="n#postStock#0;n#!!top" expanded="false" />
                 <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
                 <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
                 <element signature="n#login#0;n#!!top" expanded="false" />
-                <marker date="1561720376214" expanded="true" signature="946:953" ph="SELECT id,te... tbl_app_users" />
-                <marker date="1561720376214" expanded="true" signature="946:972" ph="SELECT * fro... tbl_products" />
-                <marker date="1561720376214" expanded="true" signature="1419:1625" ph="insert into tbl_app_stock... " />
-                <marker date="1561720376214" expanded="true" signature="2526:2733" ph="insert into tbl_schweppes_stock... " />
-                <marker date="1561720376214" expanded="true" signature="3585:3751" ph="insert into tbl_app_agentpic... " />
-                <marker date="1561720376214" expanded="true" signature="4818:5300" ph="insert into tbl_sales... " />
-                <marker date="1561720376214" expanded="true" signature="6838:6936" ph="insert into tbl_orders... " />
-                <marker date="1561720376214" expanded="true" signature="7226:7324" ph="insert into tbl_orders... " />
-                <marker date="1561720376214" expanded="true" signature="7613:7854" ph="insert into tbl_sale_details... " />
-                <marker date="1561720376214" expanded="true" signature="8790:9230" ph="insert into tbl_total_sales... " />
-                <marker date="1561720376214" expanded="true" signature="10961:11112" ph="insert into tbl_app_orders... " />
-                <marker date="1561720376214" expanded="true" signature="11943:12035" ph="SELECT id,te... tbl_app_users" />
+                <marker date="1561720529286" expanded="true" signature="946:953" ph="SELECT id,te... tbl_app_users" />
+                <marker date="1561720529286" expanded="true" signature="946:972" ph="SELECT * fro... tbl_products" />
+                <marker date="1561720529286" expanded="true" signature="1419:1625" ph="insert into tbl_app_stock... " />
+                <marker date="1561720529286" expanded="true" signature="2526:2733" ph="insert into tbl_schweppes_stock... " />
+                <marker date="1561720529286" expanded="true" signature="3585:3751" ph="insert into tbl_app_agentpic... " />
+                <marker date="1561720529286" expanded="true" signature="4818:5300" ph="insert into tbl_sales... " />
+                <marker date="1561720529286" expanded="true" signature="6838:6936" ph="insert into tbl_orders... " />
+                <marker date="1561720529286" expanded="true" signature="7226:7324" ph="insert into tbl_orders... " />
+                <marker date="1561720529286" expanded="true" signature="7613:7854" ph="insert into tbl_sale_details... " />
+                <marker date="1561720529286" expanded="true" signature="8790:9230" ph="insert into tbl_total_sales... " />
+                <marker date="1561720529286" expanded="true" signature="10961:11112" ph="insert into tbl_app_orders... " />
+                <marker date="1561720529286" expanded="true" signature="11943:12035" ph="SELECT id,te... tbl_app_users" />
               </folding>
             </state>
           </provider>
@@ -136,12 +135,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561541299083</updated>
-      <workItem from="1561541301026" duration="6941000" />
+      <workItem from="1561541301026" duration="7091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6941000" />
+    <option name="totallyTimeSpent" value="7091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1280" height="735" extended-state="6" />
@@ -181,26 +180,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="210" column="256" lean-forward="false" selection-start-line="210" selection-start-column="256" selection-end-line="210" selection-end-column="256" />
+        <state relative-caret-position="155">
+          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
           <folding>
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#login#0;n#!!top" expanded="false" />
-            <marker date="1561720376214" expanded="true" signature="946:953" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1561720376214" expanded="true" signature="946:972" ph="SELECT * fro... tbl_products" />
-            <marker date="1561720376214" expanded="true" signature="1419:1625" ph="insert into tbl_app_stock... " />
-            <marker date="1561720376214" expanded="true" signature="2526:2733" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1561720376214" expanded="true" signature="3585:3751" ph="insert into tbl_app_agentpic... " />
-            <marker date="1561720376214" expanded="true" signature="4818:5300" ph="insert into tbl_sales... " />
-            <marker date="1561720376214" expanded="true" signature="6838:6936" ph="insert into tbl_orders... " />
-            <marker date="1561720376214" expanded="true" signature="7226:7324" ph="insert into tbl_orders... " />
-            <marker date="1561720376214" expanded="true" signature="7613:7854" ph="insert into tbl_sale_details... " />
-            <marker date="1561720376214" expanded="true" signature="8790:9230" ph="insert into tbl_total_sales... " />
-            <marker date="1561720376214" expanded="true" signature="10961:11112" ph="insert into tbl_app_orders... " />
-            <marker date="1561720376214" expanded="true" signature="11943:12035" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1561720529286" expanded="true" signature="946:953" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1561720529286" expanded="true" signature="946:972" ph="SELECT * fro... tbl_products" />
+            <marker date="1561720529286" expanded="true" signature="1419:1625" ph="insert into tbl_app_stock... " />
+            <marker date="1561720529286" expanded="true" signature="2526:2733" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1561720529286" expanded="true" signature="3585:3751" ph="insert into tbl_app_agentpic... " />
+            <marker date="1561720529286" expanded="true" signature="4818:5300" ph="insert into tbl_sales... " />
+            <marker date="1561720529286" expanded="true" signature="6838:6936" ph="insert into tbl_orders... " />
+            <marker date="1561720529286" expanded="true" signature="7226:7324" ph="insert into tbl_orders... " />
+            <marker date="1561720529286" expanded="true" signature="7613:7854" ph="insert into tbl_sale_details... " />
+            <marker date="1561720529286" expanded="true" signature="8790:9230" ph="insert into tbl_total_sales... " />
+            <marker date="1561720529286" expanded="true" signature="10961:11112" ph="insert into tbl_app_orders... " />
+            <marker date="1561720529286" expanded="true" signature="11943:12035" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
