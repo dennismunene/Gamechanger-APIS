@@ -91,7 +91,7 @@ function get_products(){
 
             }
 
-            echo json_encode($products);
+            echo json_encode(array('product_details'=>$products));
 
         } else {
             return '{"success":0}';
