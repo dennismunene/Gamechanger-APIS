@@ -75,6 +75,10 @@ function get_products($request){
                 $sql = "select id,reason from tbl_product_nonusage where product_id=".$row['id'];
                 $product_nonusages = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
+                //no purchase reasons
+                $sql = "select id,reason from tbl_product_nopurchase where product_id=".$row['id'];
+                $product_nopurchase = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
                 //get sku details
                 $sql = "select  tbl_sku_details.id,tbl_sku_details.sku_detail,tbl_product_skus.sku from tbl_product_skus inner join tbl_sku_details on tbl_product_skus.id = tbl_sku_details.sku_id where tbl_product_skus.product_id=".$row['id'];
                 $skus = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
@@ -88,6 +92,7 @@ function get_products($request){
                 $row['traffic_sources'] = $traffic_sources;
                 $row['product_usages'] = $product_usages;
                 $row['product_nonusages'] = $product_nonusages;
+                $row['product_nopurchase'] = $product_nopurchase;
                 $row['sku_details'] = $skus;
                 $row['purchase_influences'] = $purchase_influences;
 
