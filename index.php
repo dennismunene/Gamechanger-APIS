@@ -134,20 +134,32 @@ function postStock($request){
 function post_product_stock($request){
     $sql = "insert into tbl_stock (`agent_id`,`type`,`product_id`,`sku_detail`,`quantity`,`region`,`van_number`,`date_created`) values(:agent_id,:type,:product_id,:sku_detail,:quantity,:region,:van_number,:date_created)";
 
+
+    $skus =  json_decode($request->getParam('skus'), true);
+
+
+
+
      try{
 
         $db = DB_Connection();
         $stmt = $db->prepare($sql);
-        $stmt->bindParam("agent_id", $request->getParam('agent_id'));
-        $stmt->bindParam("type", $request->getParam('type'));
-        $stmt->bindParam("product_id", $request->getParam('product_id'));
-        $stmt->bindParam("sku_detail", $request->getParam('sku_detail'));
-        $stmt->bindParam("quantity", $request->getParam('quantity'));
-        $stmt->bindParam("region", $request->getParam('region'));
-        $stmt->bindParam("van_number", $request->getParam('van_number'));
-        $stmt->bindParam("date_created", date('Y-m-d H:i:s'));
 
-        $stmt->execute();
+         foreach($skus as $key=>$value) {
+
+
+             $stmt->bindParam("agent_id", $request->getParam('agent_id'));
+             $stmt->bindParam("type", $request->getParam('type'));
+             $stmt->bindParam("product_id", $request->getParam('product_id'));
+             $stmt->bindParam("sku_detail", $value['sku_detail_id']);
+             $stmt->bindParam("quantity", $value['quantity']);
+             $stmt->bindParam("region", $request->getParam('region'));
+             $stmt->bindParam("van_number", $request->getParam('van_number'));
+             $stmt->bindParam("date_created", date('Y-m-d H:i:s'));
+
+             $stmt->execute();
+
+         }
 
         echo '{"success":"true"}';
     } catch (PDOException $e) {
