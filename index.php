@@ -225,6 +225,8 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
      try {
 
        $db = DB_Connection();
+
+       //record sale
         $stmt = $db->prepare($sql);
         $stmt->bindParam("customer_name",  $request->getParam('customer_name'));
         $stmt->bindParam("is_aware",$request->getParam('is_aware') );
@@ -246,27 +248,25 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
 
 
 
-        $sku_detail = 1;
+        //record sku order details
+         $skus =  json_decode($request->getParam('skus'), true);
+         $sql = "insert into tbl_orders (`sale_id`,`sku_detail`,`quantity`) values (:sale_id,:sku_detail,:quantity)";
 
-        $sql ="insert into tbl_orders (`sale_id`,`sku_detail`,`quantity`) values (:sale_id,:sku_detail,:quantity)";
-         $stmt = $db->prepare($sql);
-         $stmt->bindParam("sale_id", $sale_id);
-         $stmt->bindParam("sku_detail", $sku_detail);
-         $stmt->bindParam("quantity",$request->getParam('edSchweppes300ml'));
-         $stmt->execute();
+         foreach($skus as $key=>$value) {
+             $sku_detail_id = $value['sku_detail_id'];
+             $quantity = $value['quantity'];
 
+             $stmt = $db->prepare($sql);
+             $stmt->bindParam("sale_id", $sale_id);
+             $stmt->bindParam("sku_detail", $sku_detail_id);
+             $stmt->bindParam("quantity", $quantity);
+             $stmt->execute();
 
-         $sku_detail =2;
-         $sql ="insert into tbl_orders (`sale_id`,`sku_detail`,`quantity`) values (:sale_id,:sku_detail,:quantity)";
-         $stmt = $db->prepare($sql);
-         $stmt->bindParam("sale_id", $sale_id);
-         $stmt->bindParam("sku_detail", $sku_detail);
-         $stmt->bindParam("quantity",$request->getParam('edSchweppes500ml'));
-         $stmt->execute();
+         }
 
 
-
-         $prod_id = 2;
+         //save sale detials
+         $prod_id = $request->getParam('product_id');
          $sql ="insert into tbl_sale_details (`product_id`,`sale_id`,`agent_id`,`lat`,`lng`,`region`,`van_number`,`check_in`,`check_out`,`date_created`) values (:product_id,:sale_id,:agent_id,:lat,:lng,:region,:van_number,:check_in,:check_out,:date_created)";
          $stmt = $db->prepare($sql);
          $stmt->bindParam("product_id", $prod_id);
