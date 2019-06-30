@@ -37,10 +37,15 @@ function DB_Connection() {
 }
 
 
-function get_products(){
+function get_products($request){
 
-    //Creating sql query
-    $sql = "SELECT * FROM tbl_products";
+    $prod_id = $request->getParam('product_id');
+
+
+    if(isset($prod_id))
+        $sql = "SELECT * FROM tbl_products where id=".$prod_id;
+    else
+        $sql = "SELECT * FROM tbl_products";
 
 
     try {
