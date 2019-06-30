@@ -40,7 +40,7 @@ function DB_Connection() {
 function get_products(){
 
     //Creating sql query
-    $sql = "SELECT * from tbl_products";
+    $sql = "SELECT * FROM tbl_products";
 
 
     try {
@@ -49,8 +49,46 @@ function get_products(){
         if ($res = $db->query($sql)) {
 
             $products = array();
-            while($row = $res->fetch(PDO::FETCH_OBJ)){
+            while($row = $res->fetch(PDO::FETCH_ASSOC)){
+
+                //get purchase sources
+                $sql = "select id,purchase_source from tbl_purchase_source where product_id=".$row['id'];
+                $purchase_sources = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+
+                //get traffic sources
+                $sql = "select id,traffic_source from tbl_traffic_source where product_id=".$row['id'];
+                $traffic_sources = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+
+                //get usages
+                $sql = "select id,product_usage from tbl_product_usage where product_id=".$row['id'];
+                $product_usages = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+
+                //non usage reasons
+                $sql = "select id,reason from tbl_product_nonusage where product_id=".$row['id'];
+                $product_nonusages = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+                //get sku details
+                $sql = "select  tbl_sku_details.id,tbl_sku_details.sku_detail,tbl_product_skus.sku from tbl_product_skus inner join tbl_sku_details on tbl_product_skus.id = tbl_sku_details.sku_id where tbl_product_skus.product_id=".$row['id'];
+                $skus = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+                //get product pruchase influence
+                $sql = "select  id,influencer from tbl_purchase_influence where product_id=".$row['id'];
+                $purchase_influences = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+
+                $row['purchase_sources'] = $purchase_sources;
+                $row['traffic_sources'] = $traffic_sources;
+                $row['product_usages'] = $product_usages;
+                $row['product_nonusages'] = $product_nonusages;
+                $row['sku_details'] = $skus;
+                $row['purchase_influences'] = $purchase_influences;
+
+
                 $products[] = $row;
+
             }
 
             echo json_encode($products);
