@@ -210,8 +210,8 @@ function postAgentPic($request){
     }
 }
 function post_schweppes_sale($request){
-    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`would_recommend`,`purchase_influence`,`sales_photo`)
-values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:would_recommend,:purchase_influence,:sales_photo)";
+    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`product_no_purchase`,`would_recommend`,`purchase_influence`,`sales_photo`)
+values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:product_no_purchase,:would_recommend,:purchase_influence,:sales_photo)";
 
     $img_path = "";
 
@@ -238,6 +238,7 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
         $stmt->bindParam("product_description",  $request->getParam('product_description'));
         $stmt->bindParam("product_usage",  $request->getParam('product_usage'));
         $stmt->bindParam("product_nouse",  $request->getParam('product_nouse'));
+        $stmt->bindParam("product_no_purchase",  $request->getParam('product_no_purchase'));
         $stmt->bindParam("would_recommend",  $request->getParam('would_recommend'));
         $stmt->bindParam("purchase_influence",  $request->getParam('purchase_influence'));
         $stmt->bindParam("sales_photo", $img_path);
