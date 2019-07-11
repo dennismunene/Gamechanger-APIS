@@ -210,8 +210,8 @@ function postAgentPic($request){
     }
 }
 function post_schweppes_sale($request){
-    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`product_no_purchase`,`would_recommend`,`purchase_influence`,`sales_photo`)
-values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:product_no_purchase,:would_recommend,:purchase_influence,:sales_photo)";
+    $sql = "insert into tbl_sales (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`stock_out_count`,`other_brand_count`,`product_description`,`product_usage`,`product_nouse`,`product_no_purchase`,`would_recommend`,`purchase_influence`,`sales_photo`,`engagement_photo`)
+values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:stock_out_count,:other_brand_count,:product_description,:product_usage,:product_nouse,:product_no_purchase,:would_recommend,:purchase_influence,:sales_photo,:engagement_photo)";
 
     $img_path = "";
 
@@ -219,6 +219,15 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
             $rand = rand();
             $img_path = $rand . $_FILES['pic']['name'];
              move_uploaded_file($_FILES["pic"]["tmp_name"], "public/".$img_path);
+    }
+
+
+    $img_path_engage = "";
+
+    if ($_FILES['pic_engage']['name']) {
+        $rand = rand();
+        $img_path_engage = $rand . $_FILES['pic_engage']['name'];
+        move_uploaded_file($_FILES["pic_engage"]["tmp_name"], "public/".$img_path_engage);
     }
 
 
@@ -242,6 +251,7 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
         $stmt->bindParam("would_recommend",  $request->getParam('would_recommend'));
         $stmt->bindParam("purchase_influence",  $request->getParam('purchase_influence'));
         $stmt->bindParam("sales_photo", $img_path);
+        $stmt->bindParam("engagement_photo", $img_path_engage);
 
         $stmt->execute();
 
