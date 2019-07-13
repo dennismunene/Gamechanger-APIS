@@ -15,7 +15,7 @@ $app->get('/api/login', 'login');
 $app->get('/api/post_sale', 'postTotalSale');
 $app->get('/api/post_stock', 'postStock');
 $app->get('/api/post_schweppes_stock', 'post_schweppes_stock');
-$app->get('/api/post_rothman_sale', 'post_rothman_sale');
+$app->post('/api/post_rothman_sale', 'post_rothman_sale');
 $app->post('/api/post_pic', 'postAgentPic');
 
 
