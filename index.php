@@ -372,8 +372,8 @@ function postTotalSale($request){
 
 
 function post_rothman_sale($request){
-    $sql = "insert into tbl_rothman_sale (`customer_name`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`product_description`,`customer_reaction`,`tried_variant`,`area`,`region`,`sales_photo`,`engagement_photo`)
-values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:product_description,:customer_reaction,:tried_variant,:area,:region,:sales_photo,:engagement_photo)";
+    $sql = "insert into tbl_rothman_sale (`customer_brand`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`product_description`,`customer_reaction`,`tried_variant`,`area`,`region`,`sales_photo`,`engagement_photo`)
+values (:customer_brand,:is_aware,:traffic_source,:is_customer,:purchase_source,:product_description,:customer_reaction,:tried_variant,:area,:region,:sales_photo,:engagement_photo)";
 
     $img_path = "";
 
@@ -399,7 +399,7 @@ values (:customer_name,:is_aware,:traffic_source,:is_customer,:purchase_source,:
 
         //record sale
         $stmt = $db->prepare($sql);
-        $stmt->bindParam("customer_name",  $request->getParam('customer_name'));
+        $stmt->bindParam("customer_brand",  $request->getParam('customer_brand'));
         $stmt->bindParam("is_aware",$request->getParam('is_aware') );
         $stmt->bindParam("traffic_source", $request->getParam('traffic_source'));
         $stmt->bindParam("is_customer",  $request->getParam('is_customer'));
