@@ -27,37 +27,38 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="375" column="23" lean-forward="false" selection-start-line="375" selection-start-column="23" selection-end-line="375" selection-end-column="23" />
+            <state relative-caret-position="202">
+              <caret line="375" column="27" lean-forward="false" selection-start-line="375" selection-start-column="27" selection-end-line="375" selection-end-column="27" />
               <folding>
+                <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
                 <element signature="n#get_products#0;n#!!top" expanded="false" />
                 <element signature="n#postStock#0;n#!!top" expanded="false" />
                 <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
                 <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
                 <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
                 <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-                <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-                <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-                <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-                <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-                <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-                <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-                <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-                <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-                <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-                <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-                <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-                <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-                <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-                <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-                <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-                <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-                <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-                <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-                <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-                <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-                <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-                <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+                <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+                <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+                <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+                <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+                <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+                <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+                <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+                <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+                <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+                <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+                <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+                <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+                <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+                <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+                <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+                <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+                <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+                <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+                <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+                <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+                <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+                <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
               </folding>
             </state>
           </provider>
@@ -110,8 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -126,6 +125,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,18 +165,19 @@
       <workItem from="1563195866822" duration="66000" />
       <workItem from="1563196619337" duration="944000" />
       <workItem from="1563268560284" duration="197000" />
-      <workItem from="1564387569935" duration="193000" />
+      <workItem from="1564387569935" duration="863000" />
+      <workItem from="1564750110982" duration="218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21278000" />
+    <option name="totallyTimeSpent" value="22166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="735" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14135703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14297253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06785137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -212,34 +214,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -249,34 +252,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -286,34 +290,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -323,34 +328,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -360,34 +366,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -397,34 +404,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -434,34 +442,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -471,34 +480,73 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
+            <element signature="n#get_products#0;n#!!top" expanded="false" />
+            <element signature="n#postStock#0;n#!!top" expanded="false" />
+            <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
+            <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
+            <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
+            <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>
@@ -512,37 +560,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="375" column="23" lean-forward="false" selection-start-line="375" selection-start-column="23" selection-end-line="375" selection-end-column="23" />
+        <state relative-caret-position="202">
+          <caret line="375" column="27" lean-forward="false" selection-start-line="375" selection-start-column="27" selection-end-line="375" selection-end-column="27" />
           <folding>
+            <element signature="n#DB_Connection#0;n#!!top" expanded="false" />
             <element signature="n#get_products#0;n#!!top" expanded="false" />
             <element signature="n#postStock#0;n#!!top" expanded="false" />
             <element signature="n#post_product_stock#0;n#!!top" expanded="false" />
             <element signature="n#postAgentPic#0;n#!!top" expanded="false" />
             <element signature="n#post_schweppes_sale#0;n#!!top" expanded="false" />
             <element signature="n#postTotalSale#0;n#!!top" expanded="false" />
-            <marker date="1564387766658" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
-            <marker date="1564387766658" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
-            <marker date="1564387766658" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
-            <marker date="1564387766658" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
-            <marker date="1564387766658" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
-            <marker date="1564387766658" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
-            <marker date="1564387766658" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
-            <marker date="1564387766658" expanded="true" signature="2510:2716" ph="select id,re... where" />
-            <marker date="1564387766658" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
-            <marker date="1564387766658" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
-            <marker date="1564387766658" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
-            <marker date="1564387766658" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
-            <marker date="1564387766658" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
-            <marker date="1564387766658" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
-            <marker date="1564387766658" expanded="true" signature="14618:15013" ph="insert into tbl_sales... " />
-            <marker date="1564387766658" expanded="true" signature="16669:16767" ph="insert into tbl_orders... " />
-            <marker date="1564387766658" expanded="true" signature="17254:17495" ph="insert into tbl_sale_details... " />
-            <marker date="1564387766658" expanded="true" signature="18574:18666" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1067:1103" ph="SELECT * FRO... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1140:1146" ph="SELECT id,te... tbl_app_users" />
+            <marker date="1564750291751" expanded="true" signature="1140:1166" ph="SELECT tbl_p... tbl_products" />
+            <marker date="1564750291751" expanded="true" signature="1407:1475" ph="select id,pu... tbl_purchase_source" />
+            <marker date="1564750291751" expanded="true" signature="1635:1701" ph="select id,tr... tbl_traffic_source" />
+            <marker date="1564750291751" expanded="true" signature="1851:1915" ph="select id,pr... tbl_product_usage" />
+            <marker date="1564750291751" expanded="true" signature="2071:2131" ph="select id,re... tbl_product_nonusage" />
+            <marker date="1564750291751" expanded="true" signature="2291:2353" ph="select id,re... tbl_product_nopurchase" />
+            <marker date="1564750291751" expanded="true" signature="2510:2716" ph="select id,re... where" />
+            <marker date="1564750291751" expanded="true" signature="2874:2941" ph="select id,in... tbl_purchase_influence" />
+            <marker date="1564750291751" expanded="true" signature="3766:3972" ph="insert into tbl_app_stock... " />
+            <marker date="1564750291751" expanded="true" signature="4873:5080" ph="insert into tbl_schweppes_stock... " />
+            <marker date="1564750291751" expanded="true" signature="6078:6244" ph="insert into tbl_app_agentpic... " />
+            <marker date="1564750291751" expanded="true" signature="7313:7854" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="9842:9940" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="10439:10680" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="11616:12056" ph="insert into tbl_total_sales... " />
+            <marker date="1564750291751" expanded="true" signature="13787:13938" ph="insert into tbl_app_orders... " />
+            <marker date="1564750291751" expanded="true" signature="14618:15052" ph="insert into tbl_sales... " />
+            <marker date="1564750291751" expanded="true" signature="16796:16894" ph="insert into tbl_orders... " />
+            <marker date="1564750291751" expanded="true" signature="17381:17622" ph="insert into tbl_sale_details... " />
+            <marker date="1564750291751" expanded="true" signature="18701:18793" ph="SELECT id,te... tbl_app_users" />
           </folding>
         </state>
       </provider>

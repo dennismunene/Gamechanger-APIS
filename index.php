@@ -372,8 +372,8 @@ function postTotalSale($request){
 
 
 function post_rothman_sale($request){
-    $sql = "insert into tbl_rothman_sale (`customer_brand`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`product_description`,`customer_reaction`,`tried_variant`,`area`,`region`,`sales_photo`,`engagement_photo`)
-values (:customer_brand,:is_aware,:traffic_source,:is_customer,:purchase_source,:product_description,:customer_reaction,:tried_variant,:area,:region,:sales_photo,:engagement_photo)";
+    $sql = "insert into tbl_rothman_sale (`customer_feedback`,`customer_brand`,`is_aware`,`traffic_source`,`is_customer`,`purchase_source`,`product_description`,`customer_reaction`,`tried_variant`,`area`,`region`,`sales_photo`,`engagement_photo`)
+values (:customer_feedback,:customer_brand,:is_aware,:traffic_source,:is_customer,:purchase_source,:product_description,:customer_reaction,:tried_variant,:area,:region,:sales_photo,:engagement_photo)";
 
     $img_path = "";
 
@@ -411,6 +411,7 @@ values (:customer_brand,:is_aware,:traffic_source,:is_customer,:purchase_source,
         $stmt->bindParam("tried_variant",  $request->getParam('variant'));
         $stmt->bindParam("sales_photo", $img_path);
         $stmt->bindParam("engagement_photo", $img_path_engage);
+        $stmt->bindParam("customer_feedback", $request->getParam('customer_feedback'));
 
         $stmt->execute();
 
